@@ -1,0 +1,17 @@
+/*base*/
+@import 'plugins/bootstrap';
+@import 'structure/variables';
+/*overwrite*/
+@import 'structure/bootstrap-overwrite';
+/*assets*/
+@import 'plugins/plugins';
+@import 'plugins/mixins';
+/*content*/
+@import 'structure/client/sections/header.scss';
+@import 'structure/client/sections/home.scss';
+@import 'structure/client/sections/footer.scss';
+@import 'structure/client/mobile/header.scss';
+@import 'structure/client/mobile/home.scss';
+@import 'structure/client/sections/minha-conta.scss';
+@import 'structure/client/mobile/minha-conta.scss';
+@import 'structure/client/mobile/footer.scss';

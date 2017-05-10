@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta http-equiv="cache-control" content="no-cache">
+        <link rel="icon" href="favicon.ico">
+        <title>Koote! Perfil</title>
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/prestador.css" rel="stylesheet">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <script language="javascript" src="js/jquery.min.js"></script>
+        <script language="javascript" src="js/velocity.min.js"></script>
+        <script language="javascript" src="js/ScrollMagic.min.js"></script>
+        <script language="javascript" src="js/animation.velocity.min.js"></script> 
+        <script language="javascript" src="js/app.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-7 logo">
+                    <a href="index.html" alt="Koote!"><img src="img/logo-topo.png" alt="Koote!"/></a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-sm-9 col-md-5 bemvindo">
+                    <span>Bem-vindo, Maurício!</span>
+                    <a type="submit" class="btn">SAIR</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="perfil">
+                <div class="container infos-perfil">
+                    <div class="topo-perfil col-xs-12 col-sm-12 col-md-12">
+                        <div class="img-perfil col-xs-12 col-sm-3 col-md-2">
+                            <img src="img/foto-perfil.jpg" alt="Foto de perfil">
+                        </div>
+                        <div class="nome-perfil col-xs-12 col-sm-9 col-md-10">
+                            <div class="nome col-xs-10 col-sm-10 col-md-10">
+                                <select class="troca-perfil">
+                                    <option value="prestador" selected>PRESTADOR DE SERVIÇOS</option>
+                                    <option value="solicitante">SOLICITANTE</option>
+                                </select>
+                                <h1 class="nome">Maurício Antônio de Souza</h1>
+                            </div>
+                            <div class="conf col-xs-2 col-sm-2 col-md-2">
+                                <img src="img/config.png" id="config-img" alt="conf-img">
+                            </div>
+                            <hr class="hr-topo-perfil col-sm-12">
+                            <div class="col-xs-12 col-md-12 estrelas-cidade">
+                                <div class="estrelas col-xs-6 col-md-4">
+                                    <span class="star active"></span>
+                                    <span class="star active"></span>
+                                    <span class="star active"></span>
+                                    <span class="star active"></span>
+                                    <span class="star"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conteudo col-xs-12 col-md-9">
+                        <div class="abas col-xs-12">
+                            <div class="aba-rel col-xs-6 col-md-4">
+                                <div class="aba new active" id="aba-rel">
+                                    <img src="img/icon-kootes-relacionados.png" alt="Nova solicitação">
+                                    <span>KOOTES RELACIONADOS</span>
+                                </div>
+                            </div>
+                            <div class="aba-apr col-xs-6 col-md-4">
+                                <div class="aba old" id="aba-apr">
+                                    <img src="img/icon-aprovados-e-pendentes.png" alt="Minhas solicitações">
+                                    <span>APROVADOS E PENDENTES</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relacionados col-xs-12 col-md-12">
+                            <article class="koote col-xs-12 col-md-12" id="k-1">
+                                <div class="topo col-xs-12 col-md-12 nopadding">
+                                    <div class="col-xs-1 col-md-1 nopadding">
+                                        <span class="abre" data-target="k-1"></span>
+                                    </div>
+                                    <div class="col-xs-10 col-md-10 nopadding infos-koote">
+                                        <div class="col-xs-8 col-sm-6 col-md-5 nopadding local">
+                                            <img src="img/mini-localizacao.png">
+                                            <span class="local">RS - Porto Alegre - Auxiliadora</span>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-6 col-md-7 nopadding">
+                                            <img src="img/relogio.png">
+                                            <span class="horario">13 horas</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 col-md-1 nopadding">
+                                        <span class="remover" data-target="k-1"></span>
+                                    </div>
+                                </div>
+                                <div class="descricao col-xs-12">
+                                    <div class="desc" data-target="k-1">
+                                        <p>Remover vírus do computador</p>
+                                        <div class="tag" data-target="t-1">
+                                            <span class="quant">2</span>
+                                            <div class="tags-balao" id="t-1">
+                                                <span class="tag-balao">FORMATAR</span>
+                                                <span class="tag-balao">NOTEBOOK</span>
+                                                <span class="tag-balao">WINDOWS</span>
+                                                <span class="tag-balao">REDE</span>
+                                                <span class="tag-balao">INFORMÁTICA</span>
+                                            </div>
+                                        </div>
+                                        <div class="anexo">
+                                        </div>
+                                    </div>
+                                    <div class="comentarios col-xs-12">
+                                        <article class="col-xs-12 comentario nopadding">
+                                            <div class="img-comentario col-md-1 nopadding">
+                                                <img src="img/avatar-cpf.png">
+                                            </div>
+                                            <div class="col-xs-11 resposta-prestador">
+                                               <form>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" class="indicador-balao">
+                                                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                                <rdf:Description rdf:about=""/>
+                                                            </rdf:RDF>
+                                                        </x:xmpmeta>                       
+                                                        <?xpacket end="w"?></metadata>
+                                                        <defs>
+                                                            <style>
+                                                              .cls-1 {
+                                                                fill: #fff;
+                                                                fill-rule: evenodd;
+                                                              }
+                                                            </style>
+                                                        </defs>
+                                                        <path id="Polígono_2" data-name="Polígono 2" class="cls-1" d="M0.224,1.411L33.842-.01,21.495,27.482Z"/>
+                                                    </svg>
+                                                    <textarea class="proposta" placeholder="Envie uma mensagem para oferecer a sua proposta..."></textarea>
+                                                    <button type="submit" class="btn btn-default">ACEITAR</button>
+                                                </form> 
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>  
+                            </article>
+                            <article class="koote col-xs-12 col-md-12" id="k-2">
+                                <div class="topo col-xs-12 col-md-12 nopadding">
+                                    <div class="col-xs-1 col-md-1 nopadding">
+                                        <span class="abre" data-target="k-2"></span>
+                                    </div>
+                                    <div class="col-xs-10 col-md-10 nopadding infos-koote">
+                                        <div class="col-xs-8 col-sm-6 col-md-5 nopadding local">
+                                            <img src="img/mini-localizacao.png">
+                                            <span class="local">RS - Porto Alegre - Auxiliadora</span>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-6 col-md-7 nopadding">
+                                            <img src="img/relogio.png">
+                                            <span class="horario">13 horas</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 col-md-1 nopadding">
+                                        <span class="remover" data-target="k-2"></span>
+                                    </div>
+                                </div>
+                                <div class="descricao col-xs-12">
+                                    <div class="desc" data-target="k-2">
+                                        <p>Remover vírus do computador</p>
+                                        <div class="tag"  data-target="t-2">
+                                            <span class="quant">2</span>
+                                            <div class="tags-balao" id="t-2">
+                                                <span class="tag-balao">FORMATAR</span>
+                                                <span class="tag-balao">NOTEBOOK</span>
+                                                <span class="tag-balao">WINDOWS</span>
+                                                <span class="tag-balao">REDE</span>
+                                                <span class="tag-balao">INFORMÁTICA</span>
+                                            </div>
+                                        </div>
+                                        <div class="anexo">
+                                        </div>
+                                    </div>
+                                    <div class="comentarios col-xs-12">
+                                        <article class="col-xs-12 comentario nopadding">
+                                            <div class="img-comentario col-md-1 nopadding">
+                                                <img src="img/avatar-cpf.png">
+                                            </div>
+                                            <div class="col-xs-11 resposta-prestador">
+                                                <form>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" class="indicador-balao">
+                                                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                                <rdf:Description rdf:about=""/>
+                                                            </rdf:RDF>
+                                                        </x:xmpmeta>                       
+                                                        <?xpacket end="w"?></metadata>
+                                                        <defs>
+                                                            <style>
+                                                              .cls-1 {
+                                                                fill: #fff;
+                                                                fill-rule: evenodd;
+                                                              }
+                                                            </style>
+                                                        </defs>
+                                                        <path id="Polígono_2" data-name="Polígono 2" class="cls-1" d="M0.224,1.411L33.842-.01,21.495,27.482Z"/>
+                                                    </svg>
+                                                    <textarea class="proposta" placeholder="Envie uma mensagem para oferecer a sua proposta..."></textarea>
+                                                    <button type="submit" class="btn btn-default">ACEITAR</button>
+                                                </form> 
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>  
+                            </article>
+                        </div>
+                        <div class="aprovados-pendentes col-xs-12 col-md-12">
+                            <article class="koote col-xs-12 col-md-12" id="k-10">
+                                <div class="topo col-xs-12 col-md-12 nopadding">
+                                    <div class="col-xs-1 col-md-1 nopadding">
+                                        <span class="abre" data-target="k-10"></span>
+                                    </div>
+                                    <div class="col-xs-10 col-md-10 nopadding infos-koote">
+                                        <div class="col-xs-8 col-sm-6 col-md-5 nopadding local">
+                                            <img src="img/mini-localizacao.png">
+                                            <span class="local">RS - Porto Alegre - Auxiliadora</span>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-6 col-md-7 nopadding">
+                                            <img src="img/relogio.png">
+                                            <span class="horario">13 horas</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 col-md-1 nopadding">
+                                        <span class="remover" data-target="k-10"></span>
+                                    </div>
+                                </div>
+                                <div class="descricao col-xs-12">
+                                    <div class="desc" data-target="k-10">
+                                        <div class="v col-md-1 nopadding">
+                                            <img src="img/V-verde.png">
+                                        </div>
+                                        <p>Instalar rede wi-fi no escritório</p>                                    
+                                        <div class="tag"  data-target="t-10">
+                                            <span class="quant">2</span>
+                                            <div class="tags-balao" id="t-10">
+                                                <span class="tag-balao">FORMATAR</span>
+                                                <span class="tag-balao">NOTEBOOK</span>
+                                                <span class="tag-balao">WINDOWS</span>
+                                                <span class="tag-balao">REDE</span>
+                                                <span class="tag-balao">INFORMÁTICA</span>
+                                            </div>
+                                        </div>
+                                        <div class="anexo">
+                                        </div>
+                                    </div>
+                                    <div class="comentarios col-xs-12">
+                                        <article class="col-xs-12 comentario nopadding">
+                                            <div class="img-comentario col-md-1 nopadding">
+                                                <img src="img/avatar-cnpj.png">
+                                            </div>
+                                            <div class="col-xs-11 resposta-prestador">
+                                                <form>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" class="indicador-balao">
+                                                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                                <rdf:Description rdf:about=""/>
+                                                            </rdf:RDF>
+                                                        </x:xmpmeta>                       
+                                                        <?xpacket end="w"?></metadata>
+                                                        <defs>
+                                                            <style>
+                                                              .cls-1 {
+                                                                fill: #fff;
+                                                                fill-rule: evenodd;
+                                                              }
+                                                            </style>
+                                                        </defs>
+                                                        <path id="Polígono_2" data-name="Polígono 2" class="cls-1" d="M0.224,1.411L33.842-.01,21.495,27.482Z"/>
+                                                    </svg>
+                                                    <p class="proposta"> Envie uma mensagem para oferecer a sua proposta... </p>
+                                                </form> 
+                                            </div>
+                                        </article>
+                                        <article class="col-xs-12 comentario nopadding">
+                                            <div class="img-comentario col-md-1 nopadding">
+                                                <img src="img/avatar-cpf.png">
+                                            </div>
+                                            <div class="col-xs-11 resposta-prestador">
+                                                <form>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" class="indicador-balao">
+                                                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                                <rdf:Description rdf:about=""/>
+                                                            </rdf:RDF>
+                                                        </x:xmpmeta>                       
+                                                        <?xpacket end="w"?></metadata>
+                                                        <defs>
+                                                            <style>
+                                                              .cls-1 {
+                                                                fill: #fff;
+                                                                fill-rule: evenodd;
+                                                              }
+                                                            </style>
+                                                        </defs>
+                                                        <path id="Polígono_2" data-name="Polígono 2" class="cls-1" d="M0.224,1.411L33.842-.01,21.495,27.482Z"/>
+                                                    </svg>
+                                                    <p class="proposta"> Envie uma mensagem para oferecer a sua proposta... </p>
+                                                </form> 
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>  
+                            </article>
+                        </div>
+                    </div>
+                    <div class="conexao col-md-3 col-lg-3">
+                        <span class="aba-mobile">REGIÕES E TAGS</span>
+                        <span class="x">X</span>
+                        <div class="aba aba-regioes col-md-12">
+                            <div class="conect">
+                                <img src="img/icon-map.jpg" alt="Minhas conexões">
+                                <span>MINHAS REGIÕES</span>
+                            </div>
+                        </div>
+                        <div class="minhas-regioes col-xs-12">
+                            <div class="regiao col-xs-12">
+                                <div class="img-regiao col-xs-2 nopadding">
+                                    <img class="regiao" src="img/pin-amarelo.png" alt="GPS">
+                                </div>
+                                <div class="texto-regiao col-xs-10 nopadding">
+                                    <p class="cidade-estado">RS - Porto Alegre</p>
+                                    <p class="bairro">Auxiliadora</p>
+                                </div>
+                            </div>
+                            <div class="regiao col-xs-12">
+                                <div class="img-regiao col-xs-2 nopadding">
+                                    <img class="regiao" src="img/pin-amarelo.png" alt="GPS">
+                                </div>
+                                <div class="texto-regiao col-xs-10 nopadding">
+                                    <p class="cidade-estado">SC - Florianópolis</p>
+                                    <p class="bairro">Todos</p>
+                                </div>
+                            </div>
+                            <div class="regiao col-xs-12">
+                                <div class="img-regiao col-xs-2 nopadding">
+                                    <img class="regiao" src="img/pin-amarelo.png" alt="GPS">
+                                </div>
+                                <div class="texto-regiao col-xs-10 nopadding">
+                                    <p class="cidade-estado">SP - São Paulo</p>
+                                    <p class="bairro">Guarulhos</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="aba aba-tags col-md-12">
+                            <div class="conect">
+                                    <img src="img/minhas-tags.png" alt="Minhas conexões">
+                                    <span>MINHAS TAGS</span>
+                            </div>
+                        </div>
+                        <div class="minhas-tags">
+                            <span class="tag">INTERNET</span>
+                            <span class="tag">COMPUTADOR</span>
+                            <span class="tag">INFORMÁTICA</span>
+                            <span class="tag">NOTEBOOK</span>
+                            <span class="tag">FORMATAR</span>
+                            <span class="tag">WINDOWS</span>
+                            <span class="tag">PC</span>
+                            <span class="tag">ASSISTÊNCIA TÉCNICA</span>
+                            <span class="tag">VÍRUS</span>
+                            <span class="tag">REDE</span>
+                            <span class="tag">WI-FI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 col-md-7 footer-esq">
+                    <div class="col-xs-4 col-md-4 logo-footer">
+                        <img src="img/logo-koote.png">
+                    </div>
+                    <div class="col-xs-8 col-md-8 links-footer">
+                        <a href="#" alt="Como funciona">Como funciona</a>
+                        <a href="#" alt="Política de privacidade">Política de privacidade</a>
+                        <a href="#" alt="Termos de uso">Termos de uso</a>
+                        <a href="#" alt="Atendimento">Atendimento</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 footer-dir">
+                    <div class="col-sm-offset-8 col-sm-4 col-md-offset-8 col-md-4 redes-sociais">
+                        <a href="#" alt="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href="#" alt="Twitter"><img src="img/twitter.png" alt="Twitter"></a>
+                        <a href="#" alt="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                    </div>
+                    <div class="col-md-12 direitos">© 2017 koote! Todos os direitos reservados.</div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-ui.js"></script>
+    </body>
+</html>

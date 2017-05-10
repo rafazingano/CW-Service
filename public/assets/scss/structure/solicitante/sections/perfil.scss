@@ -1,0 +1,422 @@
+.perfil {
+	background-image: url(../img/background-internas-s.jpg);
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    background-position: 0px -100px;
+	.infos-perfil{
+	    margin-bottom: 100px;
+	    box-shadow: 0px 0px 50px -15px black;
+	    border-radius: 5px;
+	    padding: 50px;
+	    background-color: $branco;
+	    .topo-perfil{
+	    	.img-perfil{
+	    		padding: 0px;
+	    		z-index: 99;
+	    		img{
+	    			border-radius: 50%;
+	    		}
+	    	}
+	    	.nome-perfil{
+	    		padding: 0px;
+	    		color: $cinzaPerfil;
+	    		font-family: $fontfamily;
+	    		.nome{}
+	    		.estrelas-cidade{
+	    			padding-top: 5px;
+	    			padding-left: 0px;
+	    			.estrelas{
+		    			display: flex;
+		    			align-items: center;
+		    			justify-content: flex-start;
+			    		.star{
+			    		    background: url(../img/estrela-off.png);
+						    width: 30px;
+						    height: 30px;
+						    display: block;
+						    background-position: center center;
+						    background-repeat: no-repeat;
+						    transition: 1s;
+						    &.active{
+						    	background: url(../img/estrela-on.png);
+						    	background-position: center center;
+						    	background-repeat: no-repeat;
+						    }
+						    &:hover{
+						    	background: url(../img/estrela-on.png);
+						    	background-position: center center;
+						    	background-repeat: no-repeat;
+						    }
+				    	}
+			    	}
+	    		}
+	    	}
+	    	.conf{
+    		    padding: 35px 0px 0px 0px;
+	    		text-align: right;
+    		    display: flex;
+    			justify-content: space-between;
+	    		#config-img{
+	    			transition: all .2s ease;
+	    			&:hover {
+    					transform: rotate(120deg);
+    				}
+	    		}
+	    		.troca-perfil{
+    				font-family: $fontfamily;
+    				color: $cinzaPerfil;
+    				font-weight: bold;
+    				border: 0px;
+    				background-color: $branco;
+    			}
+	    	}
+	    	.hr-topo-perfil{
+	    		width: 102%;
+    			margin-left: -5%;
+    			background-color: $cinzaFundoPerfil;
+    			height: 1px;
+    			margin-top: 0px;
+    			margin-bottom: 0px;
+	    	}
+	    	h4{
+	    		color: $cinzaPerfil;
+	    		font-family: $fontfamily;
+	    	}
+	    }
+	}
+	.conteudo{
+		margin-top: 20px;
+		.abas{
+			padding: 0px;
+		}
+		.aba-old{
+			padding-left: 0px;
+    		padding-right: 30px;
+		}
+		.aba{
+		    width: 95%;
+		    border: 2px solid $azulBalao;
+		    height: 60px;
+		    border-radius: 30px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    padding: 0px 30px;
+		    color: $cinzaBalao;
+		    font-weight: bold;
+		    line-height: 13px;
+    		font-size: 14px;
+		    cursor: pointer;	
+		    img{
+		    	margin-right: 10px;
+		    }
+		    &.active{
+		    	border-color:$azulBalaoActive;
+		    	color: $cinzaBalaoActive;
+		    	&::after {
+				    content: '';
+				    background: $branco;
+				    width: 20px;
+				    height: 20px;
+				    position: absolute;
+				    top: 49px;
+				    border-right: 2px solid $azulBalaoActive;
+				    transform: rotate(135deg);
+				    border-top: 2px solid $azulBalaoActive;
+				}
+		    }
+		}
+		.formulario-new{
+			color: $cinzaPerfil;
+			background: #ededed;
+		    margin-top: 20px;
+		    border-radius: 20px;
+		    padding: 30px;
+		    .form-group{
+		    	margin-bottom: 25px;
+		    }
+		    label{
+		    	display: block;
+		    	margin-bottom: 10px;
+		    	color:$cinzaPerfil;
+	    	    font-size: 16px;
+		    	font-family: $fontfamily;
+		    }
+		    textarea{
+		    	width: 100%;
+			    border: 0px;
+			    border-radius: 10px;
+			    height: 100px;
+			    padding: 13px 20px;
+			    font-size: 16px;
+			    font-family: $fontfamily;
+		    }
+		    select{
+	    		height: 50px;
+			    width: 95%;
+			    border-radius: 2px;
+			    font-size: 18px;
+				padding: 12px;
+				color: $cinza;
+				border-color: $cinzaHalfLighter;
+				font-family: $fontfamily;
+				&.hora{
+					width: 27%;
+					border: 0px;
+				}
+	    	}
+	    	.local-new{
+	    		display: none;
+	    	}
+	    	.data-max {
+			    background: white;
+			    display: flex;
+			    align-items: center;
+			    justify-content: space-around;
+			    border-radius:5px;
+			    #data{
+		    	    width: 138px;
+				    border: 0px;
+				    font-size: 16px;
+			    }
+			}
+	    	.file {
+			    height: 50px;
+			    width: 335px;
+			    position: relative;
+			    #arquivo{
+			    	visibility: hidden;
+			    }
+			    .sobre {
+				    position: absolute;
+				    width: 100%;
+				    height: 100%;
+				    top: 0;
+			        background-color: white;
+				    display: flex;
+				    justify-content: space-around;
+				    align-items: center;
+				    border-radius: 5px;
+				    overflow: hidden;
+				    .btn{
+				    	margin-top: 0px;
+				        width: 80px;
+    					line-height: 15px;
+    					font-size: 9px;
+				    }
+				    #nome-arq {
+					    width: 105px;
+					    display: inline-block;
+					    overflow: hidden;
+					    height: 25px;
+					    font-size: 18px;
+					}
+				}	
+			}
+	    	#estado{
+	    		width: 85%;
+	    	}
+		    .nopadding{
+		    	padding: 0;
+		    }
+		    .check{
+		    	label{
+				    background: transparent;
+			        border: 0px;
+				    text-align: left;
+				    color: $cinzaPerfil;
+				    font-weight: bold;
+				}
+				input{
+					height: 10px;
+					width: 20px;
+					
+				}
+				.label-check{
+					font-size: 15px;
+				}
+				.ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon, .ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon {
+					width: 15px;
+					height: 15px;	
+				}
+		    }
+		    .btn{
+			    background-color: $azul;
+			    color: $branco;
+			    border-radius: 20px;
+			    font-size: 11px;
+			    line-height: 30px;
+			    width: 150px;
+			    letter-spacing: 1px;
+			    margin-top: 22px;
+			    transition: 0.8s;
+			    font-family: $fontfamily;
+			}	
+		}
+		.solicitacoes{
+			display: none;
+			margin-top: 30px;
+			.nopadding{
+				padding: 0px;
+			}
+			.koote{
+				background-color: $cinzaFundoPerfil;
+				padding: 10px;
+				border-radius: 20px;
+				.topo{
+					.abre{
+						width: 20px;
+						height: 20px;
+						display: block;
+						background: url(../img/botao-mais.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						margin-left: 15px;
+						position: absolute;
+						transition: 1s;
+					}
+					.fecha{
+						width: 20px;
+						height: 20px;
+						display: block;
+						background: url(../img/botao-menos.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						margin-left: 15px;
+						position: absolute;
+						transition: 1s;
+					}
+					.infos-koote{
+					    display: flex;
+					    justify-content: space-around;
+					    color: rgba(59, 61, 64, 0.46);
+					    font-weight: bold;
+				        padding-left: 35px;
+					}
+				}
+				.descricao{
+					.desc{
+						background-color: $branco;
+					    padding: 17px;
+					    border-radius: 5px;
+					    font-size: 20px;
+					    margin-top: 10px;
+					    margin-bottom: 10px;
+					    color: $cinzaPerfil;
+					    font-family: $fontfamily;
+					    position: relative;
+					    .balao {
+						    background-image: url(../img/balao-azul.png);
+						    background-repeat: no-repeat;
+						    width: 40px;
+						    height: 40px;
+						    background-position: center center;
+						    position: absolute;
+						    right: 20px;
+						    top: 10px;
+						    display: flex;
+						    justify-content: center;
+						    align-items: center;
+						    color: $branco;
+						}
+						p{
+							margin-bottom: 0px;
+						}
+					}
+					.comentarios{
+						margin-top: 10px;
+						padding-right: 0px;
+						display: none;
+						.comentario{
+							margin: 5px 0px;
+						    display: flex;
+						    justify-content: center;
+						    align-items: center;
+						    padding-right: 0px;
+						    .texto-comentario{
+						    }
+						    p{
+						    	margin-bottom: 0px;
+						    }
+						    .aceitar{
+					    	    padding-right: 0px;
+							    display: flex;
+							    justify-content: space-between;
+							    padding-left: 45px;
+						    }
+						    .nopadding{
+						    	padding: 0px;
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+	.conexao{
+		margin-top: 20px;
+		border-left: 1px solid $cinzaFundoPerfil;
+		height: 700px;
+		.x{
+			display: none;
+		}
+		.aba{
+		    width: 70%;
+		    border: 2px solid #fd8469;
+		    height: 55px;
+		    border-radius: 25px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    padding: 0px 30px;
+		    color: $cinzaBalaoActive;
+		    font-weight: bold;
+		    line-height: 13px;
+    		font-size: 14px;
+    		margin: 0px 45px 35px 45px;
+    		#conexoes-mobile{
+    			display: none;
+    		}
+    		#conexoes-desktop{
+    			display: block;
+    		}
+		    img{
+		    	margin-right: 10px;
+		    }
+		    &::after {
+			    content: '';
+			    background: $branco;
+			    width: 20px;
+			    height: 20px;
+			    position: absolute;
+			    top: 42px;
+			    border-right: 2px solid #fd8469;
+			    transform: rotate(135deg);
+			    border-top: 2px solid #fd8469;
+			}
+			.conect{
+				display: flex;
+				justify-content: center;
+			}
+		}
+		.peoples-conexao{
+				.people{
+					.people-img{
+						img{
+							border-radius: 50%;
+						}
+					}
+					.col-md-8.people-texto {
+					    padding: 0px 30px;
+					    .nome{
+							margin-bottom: 0px;
+							color: $cinzaBalaoActive;
+						}
+						.funcao{
+							color: $cinzaBalao;
+						}
+					}
+				}
+			}
+	}
+}

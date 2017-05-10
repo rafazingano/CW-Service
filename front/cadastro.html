@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta http-equiv="cache-control" content="no-cache">
+        <link rel="icon" href="favicon.ico">
+        <title>Koote! Cadastro</title>
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/login.css" rel="stylesheet">
+        <script language="javascript" src="js/jquery.min.js"></script>
+        <script language="javascript" src="js/velocity.min.js"></script>
+        <script language="javascript" src="js/ScrollMagic.min.js"></script>
+        <script language="javascript" src="js/animation.velocity.min.js"></script>
+        <script language="javascript" src="js/app.js"></script>
+        <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="col-sm-12 col-sm-3 col-md-7 logo">
+                    <a href="index.html" alt="Koote!"><img src="img/logo-topo.png" alt="Koote!"/></a>
+                </div>
+                <div class="col-sm-12 col-sm-9 col-md-5 login">
+                    <form>
+                        <div class="form-group">
+                            <label>E-mail:</label>
+                            <input type="text" name="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label>Senha:</label>
+                            <input type="password" name="Senha">
+                            <a href="#" class="esqueceu-senha"> Esqueceu a senha? </a>
+                        </div>
+                        <button type="submit" class="btn btn-default">ENTRAR</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+        <section class="cadastro">
+            <form>
+                <div class="container formulario">
+                    <div class="col-xs-12">
+                        <h1 class="cadastrese">Cadastre-se</h1>
+                    </div>
+                    <div class="col-xs-12 col-md-4 menu">
+                        <ul>
+                            <li id="menu-1" class="active"><span>1</span>DADOS PESSOAIS</li>
+                            <li id="menu-2"><span>2</span>LOCALIZAÇÃO</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-4 menu menu-mobile">
+                        <ul>
+                            <li id="menu-1" class="active"><span>1</span>DADOS PESSOAIS</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-8 div-form form-dados-pessoais">
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label for="nome">Nome:</label>
+                            <input id="nome" class="form-control" type="text" name="Nome">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-6">
+                            <label for="email">E-mail:</label>
+                            <input id="email" class="form-control" type="email" name="E-mail">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-6">
+                            <label for="telefone">Telefone:</label>
+                            <input id="telefone" class="form-control" type="text" name="Telefone">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-6">
+                            <label for="senha">Senha:</label>
+                            <input id="senha" class="form-control" type="password" name="Senha">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-6">
+                            <label for="conf-senha">Confirmar senha:</label>
+                            <input id="conf-senha" class="form-control" type="password" name="Confirmar senha">
+                        </div>
+                        <div class="form-group col-xs-12 margintop">
+                            <label for="cpf-cnpj"> Informe o seu CPF ou CNPJ da sua empresa:</label>
+                            <div class="col-xs-5 col-md-2 nopadding">
+                                <select id="cpf-cnpj" name="CPF/CNPJ">
+                                    <option value="cpf" selected>CPF</option>
+                                    <option value="cnpj">CNPJ</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-7 col-md-10 nopadding">
+                                <input id="cpf-cnpj" class="form-control" type="text" name="CPF/CNPJ">
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-12 margintop check">
+                            <label for="prestador">Gostaria de fazer o cadastro como prestador de serviços?</label>
+                            <div id="radioset">
+                                <input type="radio" id="radio1" name="service_provider" checked="checked" value="y"><label for="radio1">Sim. Quero prestar serviços.</label>
+                                <input type="radio" id="radio2" name="service_provider" value="n"><label for="radio2">Não. Só quero cotar.</label>
+                            </div>
+                        </div>    
+                        <a class="btn btn-default" id="proxima-etapa">PROXIMA ETAPA</a>
+                    </div>
+                    <div class="col-xs-12 col-md-4 menu menu-mobile">
+                        <ul>
+                            <li id="menu-2"><span>2</span>LOCALIZAÇÃO</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-8 div-form form-localizacao">
+                        <div class="form-group col-xs-12 col-md-3 col-lg-2 nopadding">
+                            <label for="estado">Estado:</label>
+                            <select name="Estado" id="estado">
+                                <option value="todos">Todos</option>
+                                <option value="RS">RS</option>
+                                <option value="SP">SP</option>
+                                <option value="RJ">RJ</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-xs-12 col-md-4 col-lg-5 nopadding">
+                            <label for="cidade">Cidade:</label>
+                            <select name="Cidade" id="cidade">
+                                <option value="Todos">Todas</option>
+                                <option value="Porto Alegre">Porto Alegre</option>
+                                <option value="Guaíba">Guaíba</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-xs-12 col-md-5 nopadding">
+                            <label for="bairro">Bairro:</label>
+                            <select name="Bairro" id="bairro">
+                                <option value="Todos">Todos</option>
+                                <option value="Centro">Centro</option>
+                                <option value="Auxiliadora">Auxiliadora</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-8 div-form form-localizacao-prestador">
+                        <span class="mais">+</span>
+                        <div class="form-group col-xs-12 col-md-12 nopadding">
+                            <label for="regiões">Minhas regiões:</label>
+                            <input type="text" data-role="tagsinput" class="label-teste" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-8 div-form form-localizacao-cotar">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-offset-4 col-md-8 div-form form-localizacao">
+                        <button type="submit" class="btn btn-default" id="proxima-etapa">FINALIZAR</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 col-md-7 footer-esq">
+                    <div class="col-xs-4 col-md-4 logo-footer">
+                        <img src="img/logo-koote.png">
+                    </div>
+                    <div class="col-xs-8 col-md-8 links-footer">
+                        <a href="#" alt="Como funciona">Como funciona</a>
+                        <a href="#" alt="Política de privacidade">Política de privacidade</a>
+                        <a href="#" alt="Termos de uso">Termos de uso</a>
+                        <a href="#" alt="Atendimento">Atendimento</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 footer-dir">
+                    <div class="col-sm-offset-8 col-sm-4 col-md-offset-8 col-md-4 redes-sociais">
+                        <a href="#" alt="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href="#" alt="Twitter"><img src="img/twitter.png" alt="Twitter"></a>
+                        <a href="#" alt="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                    </div>
+                    <div class="col-md-12 direitos">© 2017 koote! Todos os direitos reservados.</div>
+                </div>
+            </div>
+
+        </footer>
+        <script language="javascript" src="js/bootstrap-tagsinput.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+    </body>
+</html>

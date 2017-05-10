@@ -1,0 +1,402 @@
+@media (max-width: 1200px){
+	.minha-conta {
+		.formulario{
+		    .cadastrese{
+		    }
+		    .menu{
+		    	ul{
+		    		li{
+		    			width: 100%;
+					    span {}
+					    &.active{
+					    	span {}
+					    }
+		    		}
+
+		    	}
+		    }
+		    .form-dados-pessoais{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	.nopadding {}
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		    .form-localizacao-prestador{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{
+				    		width: 100%;
+				    	}
+				    	&.nopadding {}
+						#estado{
+							width: 100%;
+						}
+						.bootstrap-tagsinput{
+							input {}
+							span{
+								&.tag{
+								    & [data-role="remove"]{}
+								}
+							}
+						}
+						
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}
+					.mais{
+						right: 25px;
+    					top: -10px;
+					}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		    .form-localizacao-cotar{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{
+				    		width: 100%;
+				    	}
+				    	&.nopadding {}
+						#estado{
+							width: 100%;
+						}
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}
+					span{}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		}
+	}
+}
+@media (max-width: 992px){
+	.minha-conta {
+		.formulario{
+		    .cadastrese{
+		    }
+		    .menu{
+		    	display: none;
+		    	height: auto;
+		    	&.menu-mobile{
+		    		display: flex;
+		    		ul{
+		    			width: 100%;
+		    		}
+		    	}
+		    	ul{
+		    		li{
+					    span {}
+					    &.active{
+					    	span {}
+					    }
+		    		}
+		    	}
+		    	.foto{
+		    		width: 100%;
+		    	}
+		    }
+		    .form-dados-pessoais{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	.nopadding {}
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		    .form-localizacao-prestador{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	&.nopadding {}
+						#estado{}
+						.bootstrap-tagsinput{
+							input {}
+							span{
+								&.tag{
+								    & [data-role="remove"]{}
+								}
+							}
+						}
+						
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}
+					.mais{}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		    .form-localizacao-cotar{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	&.nopadding {}
+						#estado{}
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}
+					span{}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		    .form-localizacao{
+	    		.form-group{
+		    		label{}
+			    	input{}
+			    	select{
+			    		width: 100%;
+			    	}
+			    	&.nopadding {}
+					#estado{
+						width: 100%;
+					}
+		    	}
+		    	.margintop{}
+				.check{
+					label{}
+					input{}
+					.label-check{}
+				}
+				span{}	
+				.btn{
+				    &:hover{}
+				}	 	
+		    }
+		}
+	}
+}
+@media (max-width: 768px){
+	.minha-conta {
+		.formulario{
+		    .cadastrese{
+		    }
+		    .menu{
+		    	ul{
+		    		li{
+					    span {}
+					    &.active{
+					    	span {}
+					    }
+		    		}
+
+		    	}
+		    }
+		    .form-dados-pessoais{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	.nopadding {}
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		    .form-localizacao-prestador{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	&.nopadding {}
+						#estado{}
+						.bootstrap-tagsinput{
+							input {}
+							span{
+								&.tag{
+								    & [data-role="remove"]{}
+								}
+							}
+						}
+						
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}
+					.mais{}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		    .form-localizacao-cotar{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	&.nopadding {}
+						#estado{}
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}
+					span{}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		}
+	}
+}
+@media (max-width: 420px){
+	.minha-conta {
+		.formulario{
+			padding: 10px;
+		    .cadastrese{
+		    }
+		    .menu{
+		    	ul{
+		    		li{
+					    span {}
+					    &.active{
+					    	span {}
+					    }
+		    		}
+
+		    	}
+		    }
+		    .form-dados-pessoais{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	.nopadding {}
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		    .form-localizacao-prestador{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	&.nopadding {}
+						#estado{}
+						.bootstrap-tagsinput{
+							input {}
+							span{
+								&.tag{
+								    & [data-role="remove"]{}
+								}
+							}
+						}
+						
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}
+					.mais{}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		    .form-localizacao-cotar{
+		    	form{
+		    		.form-group{
+			    		label{}
+				    	input{}
+				    	select{}
+				    	&.nopadding {}
+						#estado{}
+			    	}
+			    	.margintop{}
+					.check{
+						label{}
+						input{}
+						.label-check{}
+					}
+					span{}	
+					.btn{
+					    &:hover{}
+					}			
+		    	}    	
+		    }
+		}
+	}	
+}

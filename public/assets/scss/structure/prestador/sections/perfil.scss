@@ -1,0 +1,664 @@
+.perfil {
+	background-image: url(../img/background-internas-s.jpg);
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    background-position: 0px -100px;
+	.infos-perfil{
+	    margin-bottom: 100px;
+	    box-shadow: 0px 0px 50px -15px black;
+	    border-radius: 5px;
+	    padding: 50px;
+	    background-color: $branco;
+	    .topo-perfil{
+	    	.img-perfil{
+	    		z-index: 99;
+	    		img{
+	    			border-radius: 50%;
+	    		}
+	    	}
+	    	.nome-perfil{
+	    		padding: 0px;
+	    		color: $cinzaPerfil;
+	    		font-family: $fontfamily;
+	    		.nome{}
+	    		.estrelas-cidade{
+	    			padding-top: 5px;
+	    			padding-left: 0px;
+	    			.estrelas{
+		    			display: flex;
+		    			align-items: center;
+		    			justify-content: flex-start;
+			    		.star{
+			    		    background: url(../img/estrela-off.png);
+						    width: 30px;
+						    height: 30px;
+						    display: block;
+						    background-position: center center;
+						    background-repeat: no-repeat;
+						    transition: 1s;
+						    &.active{
+						    	background: url(../img/estrela-on.png);
+						    	background-position: center center;
+						    	background-repeat: no-repeat;
+						    }
+						    &:hover{
+						    	background: url(../img/estrela-on.png);
+						    	background-position: center center;
+						    	background-repeat: no-repeat;
+						    }
+				    	}
+			    	}
+			    	.quant-avaliacoes{
+		    		    font-weight: bold;
+    					font-size: 18px;
+			    	}
+	    		}
+	    	}
+	    	.conf{
+	    		padding: 25px;
+	    		text-align: right;
+    		    display: flex;
+    			justify-content: space-between;
+	    			.troca-perfil{
+	    				font-family: $fontfamily;
+	    				color: $cinzaPerfil;
+	    				font-weight: bold;
+	    				border: 0px;
+	    				background-color: $branco;
+	    			}
+	    		#config-img{
+	    			transition: all .2s ease;
+	    			&:hover {
+    					transform: rotate(120deg);
+    				}
+	    		}
+	    	}
+	    	.hr-topo-perfil{
+	    		width: 103%;
+    			margin-left: -5%;
+    			background-color: $cinzaFundoPerfil;
+    			height: 1px;
+    			margin-top: 0px;
+    			margin-bottom: 0px;
+	    	}
+	    	h4{
+	    		color: $cinzaPerfil;
+	    		font-family: $fontfamily;
+	    	}
+	    }
+	}
+	.conteudo{
+		margin-top: 20px;
+		.aba-old{
+			padding-left: 0px;
+    		padding-right: 30px;
+		}
+		.aba{
+		    width: 100%;
+		    border: 2px solid $azulBalao;
+		    height: 65px;
+		    border-radius: 35px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    padding: 0px 20px;
+		    color: $cinzaBalao;
+		    font-weight: bold;
+		    line-height: 13px;
+    		font-size: 15px;
+		    cursor: pointer;	
+		    img{
+		    	margin-right: 10px;
+		    }
+		    &.active{
+		    	border-color:$azulBalaoActive;
+		    	color: $cinzaBalaoActive;
+		    	&::after {
+				    content: '';
+				    background: $branco;
+				    width: 20px;
+				    height: 20px;
+				    position: absolute;
+				    top: 55px;
+				    border-right: 2px solid $azulBalaoActive;
+				    transform: rotate(135deg);
+				    border-top: 2px solid $azulBalaoActive;
+				}
+		    }
+		}
+		.relacionados{
+			margin-top: 30px;
+			.nopadding{
+				padding: 0px;
+			}
+			.koote{
+				background-color: $cinzaFundoPerfil;
+				padding: 10px;
+				border-radius: 20px;
+				margin-top: 10px;
+				.topo{
+					font-family: $fontfamily;
+					color: #949494;
+					font-weight: bold;
+					.abre{
+						width: 20px;
+						height: 20px;
+						display: block;
+						background: url(../img/botao-mais.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						margin-left: 15px;
+						position: absolute;
+						transition: 1s;
+					}
+					.fecha{
+						width: 20px;
+						height: 20px;
+						display: block;
+						background: url(../img/botao-menos.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						margin-left: 15px;
+						position: absolute;
+						transition: 1s;
+					}
+					.infos-koote{					}
+					.remover{
+						width: 20px;
+						height: 20px;
+						display: block;
+						background: url(../img/fechar.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						margin-left: 25px;
+						position: absolute;
+						transition: 1s;
+					}
+				}
+				.descricao{
+					.desc{
+						background-color: $branco;
+					    padding: 10px 17px;
+					    border-radius: 5px;
+					    font-size: 20px;
+					    margin-top: 10px;
+					    margin-bottom: 10px;
+					    color: $cinzaPerfil;
+					    font-family: $fontfamily;
+					    position: relative;
+					    .tag {
+						    background-image: url(../img/tags.png);
+						    background-repeat: no-repeat;
+						    width: 40px;
+						    height: 60px;
+						    background-position: center center;
+						    position: absolute;
+						    right: 0px;
+						    top: -12px;
+						    display: flex;
+						    justify-content: center;
+						    align-items: flex-end;
+						    color: $branco;
+						    padding-bottom: 10px;
+						}
+						.tag {
+						    background-image: url(../img/tags.png);
+						    background-repeat: no-repeat;
+						    width: 40px;
+						    height: 60px;
+						    background-position: center center;
+						    position: absolute;
+						    right: 0px;
+						    top: -12px;
+						    display: flex;
+						    justify-content: center;
+						    align-items: flex-end;
+						    color: $branco;
+					        padding-bottom: 10px;
+					        .quant{
+					        	display: block;
+					        	visibility: visible;
+					        }
+					        .tags-balao{
+					        	visibility: hidden;
+					        	position: absolute;
+							    width: 250px;
+							    height: auto;
+							    background: $azulBalaoActive;
+							    color: white;
+							    font-size: 15px;
+							    font-weight: 100;
+							    padding: 10px;
+							    border-radius: 10px;
+							    right: -260px;
+							    top: 0px;
+							    z-index: 9999999;
+							    line-height: 50px;
+					        	transition: all 5s;
+							    &::after {
+								        content: '';
+									    background: $azulBalaoActive;
+									    width: 15px;
+									    height: 15px;
+									    transform: rotate(135deg);
+									    position: absolute;
+									    left: -7px;
+									    top: 14px;
+									}
+									.tag-balao{
+										background: rgba(178, 225, 243, 0.17);;
+										padding: 10px 15px;
+										border-radius: 20px;
+									}
+					        }
+					        &:hover{
+					        	.tags-balao{
+					        		visibility: visible;
+								}
+					        }
+						}
+						.anexo {
+						    background-image: url(../img/anexo-nao.png);
+						    background-repeat: no-repeat;
+						    width: 40px;
+						    height: 40px;
+						    background-position: center center;
+						    position: absolute;
+						    right: 35px;
+						    top: 5px;
+						}
+						p{
+							margin-bottom: 0px;
+							width: 80%;
+						}
+					}
+					.comentarios{
+						margin-top: 10px;
+						padding-right: 0px;
+						display: none;
+						.comentario{
+							margin: 5px 0px;
+						    display: flex;
+						    justify-content: center;
+						    align-items: flex-start;
+						    padding-right: 0px;
+					        margin-top: 0px;
+					        .img-comentario{
+					        	margin-top: 25px;
+					        }
+						    .resposta-prestador{
+						    	.indicador-balao{
+						    		position: absolute;
+								    left: 0px;
+								    top: 20%;
+						    	}
+						    	.proposta{
+					    		    width: 100%;
+								    border: 0px;
+								    border-radius: 10px;
+								    padding: 15px;
+								    height: 100px;
+								    font-family: $fontfamily;
+								    color: $cinzaPerfil;
+								    font-size: 18px;
+						    	}
+						    	.btn{
+								    background-color: $azul;
+								    color: $branco;
+								    border-radius: 20px;
+								    font-size: 11px;
+								    line-height: 23px;
+								    width: 100px;
+								    letter-spacing: 1px;
+								    margin-top: 22px;
+								    transition: 0.8s;
+								    font-family: $fontfamily;
+								    float: right;
+								}	
+						    }
+						    p{
+						    	margin-bottom: 0px;
+						    }
+						    .aceitar{
+					    	    padding-right: 0px;
+							    display: flex;
+							    justify-content: space-between;
+							    padding-left: 45px;
+						    }
+						    .nopadding{
+						    	padding: 0px;
+						    }
+						}
+					}
+				}
+				&.removido{
+					opacity: 0.2;
+				}
+			}
+		}
+		.aprovados-pendentes{
+			margin-top: 30px;
+			display: none;
+			.nopadding{
+				padding: 0px;
+			}
+			.koote{
+				background-color: $cinzaFundoPerfil;
+				padding: 10px;
+				border-radius: 20px;
+				margin-top: 10px;
+				.topo{
+					font-family: $fontfamily;
+					color: #949494;
+					font-weight: bold;
+					.abre{
+						width: 20px;
+						height: 20px;
+						display: block;
+						background: url(../img/botao-mais.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						margin-left: 15px;
+						position: absolute;
+						transition: 1s;
+					}
+					.fecha{
+						width: 20px;
+						height: 20px;
+						display: block;
+						background: url(../img/botao-menos.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						margin-left: 15px;
+						position: absolute;
+						transition: 1s;
+					}
+					.infos-koote{					}
+					.remover{
+						width: 20px;
+						height: 20px;
+						display: block;
+						background: url(../img/fechar.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						margin-left: 15px;
+						position: absolute;
+						transition: 1s;
+					}
+				}
+				.descricao{
+					.desc{
+						background-color: $branco;
+					    padding: 10px 17px;
+					    border-radius: 5px;
+					    font-size: 20px;
+					    margin-top: 10px;
+					    margin-bottom: 10px;
+					    color: $cinzaPerfil;
+					    font-family: $fontfamily;
+					    position: relative;
+					    .tag {
+						    background-image: url(../img/tags.png);
+						    background-repeat: no-repeat;
+						    width: 40px;
+						    height: 60px;
+						    background-position: center center;
+						    position: absolute;
+						    right: 0px;
+						    top: -12px;
+						    display: flex;
+						    justify-content: center;
+						    align-items: flex-end;
+						    color: $branco;
+					        padding-bottom: 10px;
+					        .quant{
+					        	display: block;
+					        	visibility: visible;
+					        }
+					        .tags-balao{
+					        	visibility: hidden;
+					        	position: absolute;
+							    width: 250px;
+							    height: auto;
+							    background: $azulBalaoActive;
+							    color: white;
+							    font-size: 15px;
+							    font-weight: 100;
+							    padding: 10px;
+							    border-radius: 10px;
+							    right: -260px;
+							    top: 0px;
+							    z-index: 9999999;
+							    line-height: 50px;
+					        	transition: all 5s;
+							    &::after {
+								        content: '';
+									    background: $azulBalaoActive;
+									    width: 15px;
+									    height: 15px;
+									    transform: rotate(135deg);
+									    position: absolute;
+									    left: -7px;
+									    top: 14px;
+									}
+									.tag-balao{
+										background: rgba(178, 225, 243, 0.17);
+										padding: 10px 15px;
+										border-radius: 20px;
+										margin-right: 5px;
+									}
+					        }
+					        &:hover{
+					        	.tags-balao{
+					        		visibility: visible;
+								}
+					        }
+						}						
+						.anexo {
+						    background-image: url(../img/anexo-nao.png);
+						    background-repeat: no-repeat;
+						    width: 40px;
+						    height: 40px;
+						    background-position: center center;
+						    position: absolute;
+						    right: 35px;
+						    top: 5px;
+						}
+						p{
+							margin-bottom: 0px;
+						}
+					}
+					.comentarios{
+						margin-top: 10px;
+						padding-right: 0px;
+						display: none;
+						.comentario{
+							margin: 5px 0px;
+						    display: flex;
+						    justify-content: center;
+						    align-items: flex-start;
+						    padding-right: 0px;
+					        margin-top: 0px;
+					        .img-comentario{
+					        	margin-top: 25px;
+					        }
+						    .resposta-prestador{
+						    	.indicador-balao{
+						    		position: absolute;
+								    left: 0px;
+								    top: 36%;
+						    	}
+						    	.proposta{
+					    		    width: 100%;
+								    border: 0px;
+								    border-radius: 10px;
+								    padding: 15px;
+								    height: 100px;
+								    font-family: $fontfamily;
+								    color: $cinzaPerfil;
+								    font-size: 18px;
+								    background-color: $branco;
+						    	}
+						    }
+						    p{
+						    	margin-bottom: 0px;
+						    }
+						    .aceitar{
+					    	    padding-right: 0px;
+							    display: flex;
+							    justify-content: space-between;
+							    padding-left: 45px;
+						    }
+						    .nopadding{
+						    	padding: 0px;
+						    }
+						}
+					}
+				}
+				&.removido{
+					opacity: 0.2;
+				}
+			}
+		}
+	}
+	.conexao{
+		border-left: 1px solid $cinzaFundoPerfil;
+		margin-top: 20px;
+		.x{
+			display: none;
+		}
+		.aba-mobile{
+			display: none;
+		}
+		.aba{
+		    width: 100%;
+		    border: 2px solid $azulBalao;
+		    height: 70px;
+		    border-radius: 35px;
+		    color: $cinzaBalaoActive;
+		    font-weight: bold;
+		    line-height: 13px;
+    		font-size: 15px;
+		    cursor: pointer;	
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+	        margin-bottom: 30px;
+		    .conect{
+		    	display: flex;
+			    justify-content: center;
+			    align-items: center;
+		    }
+		    img{
+		    	margin-right: 10px;
+		    }
+		    &.aba-regioes{
+		    	border: 2px solid #ffcd00;
+		    	span{
+		    		width: 100px;
+		    	}
+		    	&::after {
+				    content: '';
+				    background: $branco;
+				    width: 20px;
+				    height: 20px;
+				    position: absolute;
+				    top: 58px;
+				    border-right: 2px solid #ffcd00;
+				    transform: rotate(135deg);
+				    border-top: 2px solid #ffcd00;
+				}
+		    }
+		    &.aba-tags{
+		    	margin-top: 50px;
+		    	border: 2px solid #b969fd;
+		    	span{
+		    		width: 100px;
+		    		display: block;
+		    	}
+		    	&::after {
+				    content: '';
+				    background: $branco;
+				    width: 20px;
+				    height: 20px;
+				    position: absolute;
+				    top: 58px;
+				    border-right: 2px solid #b969fd;
+				    transform: rotate(135deg);
+				    border-top: 2px solid #b969fd;
+				}
+		    }
+	    	
+		}
+		.minhas-regioes{
+			.regiao{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 10px;
+				p{
+					margin-bottom: 0px;
+					&.cidade-estado{
+						font-weight: bold;
+						font-family: $fontfamily;
+						color: $cinzaPerfil;
+					}
+					&.bairro{
+						font-family: $fontfamily;
+						color: $cinzaPerfil;
+					}
+				}
+				.nopadding{
+					padding: 0px;
+				}
+			}
+		}
+		.minhas-tags{
+			.tag{
+			    padding: 12px;
+			    border-radius: 20px;
+			    background-color: $cinzaHalfLighter;
+			    font-weight: bold;
+			    font-family: $fontfamily;
+			    display: inline-block;
+			    color: $cinzaPerfil;
+			    margin-bottom: 10px;
+			    margin-left: 5px;
+			}
+		}
+	}
+}
+.publico{
+	.nopadding{
+		padding: 0px;
+	}
+	padding-bottom: 100px;
+	.infos-perfil{
+		margin-bottom: 10px;
+		.perfil-publico{
+			margin-top: 60px;
+			border: 0px;
+			.descricao{
+				font-size: 25px;
+				font-family: $fontfamily;
+				color: $cinzaPerfil;
+				margin-top: 45px;
+			}
+			
+		}
+	}
+	.btn{
+	    background-color: $azul;
+	    color: $branco;
+	    border-radius: 20px;
+	    font-size: 11px;
+	    line-height: 23px;
+	    width: 100px;
+	    letter-spacing: 1px;
+	    margin-top: 22px;
+	    transition: 0.8s;
+	    font-family: $fontfamily;
+	    float: right;
+	}
+}
+	

@@ -1,0 +1,79 @@
+@media (max-width: 1200px){
+	header{
+		
+		.logo{
+			img{}
+		}
+		form{
+			.form-group{
+				label{}
+				input {}
+				.esqueceu-senha {}
+			}
+			.btn {
+			    &:hover{}
+			}
+		}
+	}
+}
+@media (max-width: 992px){
+	header{
+		height: 260px;
+		.logo{
+			justify-content: center;
+			img{}
+		}
+		form{
+			.form-group{
+				label{}
+				input {}
+				.esqueceu-senha {}
+			}
+			.btn {
+			    &:hover{}
+			}
+		}
+	}
+}
+@media (max-width: 768px){
+	header{
+		.bemvindo{
+			justify-content: center;
+		}
+		.logo{
+			img{}
+		}
+		form{
+			.form-group{
+				label{}
+				input {}
+				.esqueceu-senha {}
+			}
+			.btn {
+			    &:hover{}
+			}
+		}
+	}
+}
+@media (max-width: 420px){
+	header{
+		height: 220px;
+		.logo{
+			justify-content: center;
+			img{}
+		}
+		form{
+			padding: 10px 0px;
+			.form-group{
+				label{}
+				input {
+					width: 110px;
+				}
+				.esqueceu-senha {}
+			}
+			.btn {
+			    &:hover{}
+			}
+		}
+	}
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta http-equiv="cache-control" content="no-cache">
+        <link rel="icon" href="favicon.ico">
+        <title>Koote! Perfil</title>
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/solicitante.css" rel="stylesheet">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <script language="javascript" src="js/jquery.min.js"></script>
+        <script language="javascript" src="js/velocity.min.js"></script>
+        <script language="javascript" src="js/ScrollMagic.min.js"></script>
+        <script language="javascript" src="js/animation.velocity.min.js"></script> 
+        <script language="javascript" src="js/app.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-7 logo">
+                    <a href="index.html" alt="Koote!"><img src="img/logo-topo.png" alt="Koote!"/></a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-sm-9 col-md-5 bemvindo">
+                    <span>Bem-vindo, Maurício!</span>
+                    <a type="submit" class="btn">SAIR</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="perfil">
+                <div class="container infos-perfil">
+                    <div class="topo-perfil col-xs-12 col-sm-12 col-md-12">
+                        <div class="img-perfil col-xs-12 col-sm-3 col-md-2">
+                            <img src="img/foto-perfil.jpg" alt="Foto de perfil">
+                        </div>
+                        <div class="nome-perfil col-xs-12 col-sm-9 col-md-10">
+                            <div class="nome col-xs-10 col-sm-10 col-md-10">
+                                <select class="troca-perfil">
+                                    <option value="prestador">PRESTADOR DE SERVIÇOS</option>
+                                    <option value="solicitante" selected>SOLICITANTE</option>
+                                </select>
+                                <h1 class="nome">Maurício Antônio de Souza</h1>
+                            </div>
+                            <div class="conf col-xs-2 col-sm-2 col-md-2">
+                                <img src="img/config.png" id="config-img" alt="conf-img">
+                            </div>
+                            <hr class="hr-topo-perfil col-sm-12">
+                            <div class="col-xs-12 col-md-12 estrelas-cidade">
+                                <div class="estrelas col-xs-6 col-md-4">
+                                    <span class="star active"></span>
+                                    <span class="star active"></span>
+                                    <span class="star active"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="col-xs-6 col-md-4">
+                                    <h4 class="cidade">Porto  Alegre - RS</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conteudo col-xs-12 col-md-9">
+                        <div class="abas col-xs-12">
+                            <div class="aba-new col-xs-6 col-md-4">
+                                <div class="aba new active" id="aba-new">
+                                    <img src="img/nova-solicitacao.png" alt="Nova solicitação">
+                                    <span>NOVA SOLICITAÇÃO</span>
+                                </div>
+                            </div>
+                            <div class="aba-old col-xs-6 col-md-4">
+                                <div class="aba old" id="aba-old">
+                                    <img src="img/minhas-solicitacoes.png" alt="Minhas solicitações">
+                                    <span>MINHAS SOLICITAÇÕES</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formulario-new col-xs-12 col-md-12">
+                            <form>
+                                <div class="form-group">
+                                    <label for="descricao">O que você deseja solicitar?</label>
+                                    <textarea placeholder="Descreva detalhes da sua solicitação..." id="descricao" name="descricao"></textarea>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 nopadding">
+                                    <label for="arquivo">Deseja anexar um arquivo?</label>
+                                    <div class="file">
+                                        <input type="file" name="arquivo" id="arquivo">
+                                        <div class="sobre">
+                                            <div class="btn-holder holder-left"><img class="icon" src="img/anexo.png"></div>
+                                            <span id="nome-arq">Selecione...</span>
+                                            <div class="btn-holder holder-right"><a class="btn procura-arq">PROCURAR</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 nopadding">
+                                    <label for="data">Qual o prazo máximo?</label>
+                                    <div class="data-max">
+                                        <img class="icon-data" src="img/calendario.png">
+                                        <input type="date" name="data" id="data">
+                                        <select name="hora" class="hora">
+                                            <option value="7:00">7:00</option>
+                                            <option value="8:00">8:00</option>
+                                            <option value="9:00">9:00</option>
+                                            <option value="10:00">10:00</option>
+                                            <option value="11:00">11:00</option>
+                                            <option value="12:00">12:00</option>
+                                            <option value="13:00">13:00</option>
+                                            <option value="14:00">14:00</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="16:00">16:00</option>
+                                            <option value="17:00">17:00</option>
+                                            <option value="18:00">18:00</option>
+                                            <option value="19:00">19:00</option>
+                                            <option value="20:00">20:00</option>
+                                            <option value="21:00">21:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group check">
+                                    <label>Para onde é a sua solicitação?</label>
+                                    <div id="radioset">
+                                        <input type="radio" id="radio1" name="localizacao" checked="checked" value="y"><label for="radio1">Minha localização</label>
+                                        <input type="radio" id="radio2" name="localizacao" value="n"><label for="radio2">Nova localização</label>
+                                    </div>
+                                </div>
+                                <div class="local-new">
+                                    <div class="form-group col-xs-12 col-sm-4 col-md-2 nopadding">
+                                        <label for="estado">Estado:</label>
+                                        <select name="estado" id="estado">
+                                             <option value="RS">RS</option>
+                                             <option value="Outro">Outro</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-xs-12 col-sm-4 col-md-5 nopadding">
+                                        <label for="cidade">Cidade:</label>
+                                        <select name="cidade">
+                                             <option value="Porto Alegre">Porto Alegre</option>
+                                             <option value="Outro">Outro</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-xs-12 col-sm-4 col-md-5 nopadding">
+                                        <label for="bairro">Bairro:</label>
+                                        <select name="bairro">
+                                             <option value="Auxiliadora">Auxiliadora</option>
+                                             <option value="Outro">Outro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group check">
+                                    <label for="quem">Enviar solicitação para quem?</label>
+                                    <div id="radioset1">
+                                        <input type="radio" id="radio3" name="quem" value="todos"><label for="radio3">Todos</label>
+                                        <input type="radio" id="radio4" name="quem" checked="checked" value="conexões"><label for="radio4">Minhas conexões</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-default">ENVIAR</button>
+                            </form>
+                        </div>
+                        <div class="solicitacoes col-xs-12 col-md-12">
+                            <article class="koote col-xs-12 col-md-12" id="k-1">
+                                <div class="topo col-xs-12 col-md-12 nopadding">
+                                    <div class="col-xs-2 col-md-2 nopadding">
+                                        <span class="abre" data-target="k-1"></span>
+                                    </div>
+                                    <div class="col-xs-offset-3 col-sm-offset-5 col-md-offset-6 col-xs-7 col-sm-5 col-md-4 infos-koote">
+                                        <img class="icone-calendar" src="img/calendario-pequeno.png">
+                                        <span class="data">15/05/2017</span>
+                                        <span class="hora">18:00</span>
+                                    </div>
+                                </div>
+                                <div class="descricao col-xs-12">
+                                    <div class="desc" data-target="k-1">
+                                        <p>Arrumar geladeira (urgente)</p>
+                                        <div class="balao">
+                                            <span class="quant">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="comentarios col-xs-12">
+                                        <article class="comentario col-xs-12">
+                                            <div class="img-comentario col-md-1 nopadding">
+                                                <img src="img/avatar-cpf.png">
+                                            </div>
+                                            <div class="texto-comentario col-md-9">
+                                                <p>OK. Resolvo seu problema. Valor: R$100/hora</p>
+                                            </div>
+                                            <div class="aceitar col-md-2">
+                                                <img id="y" src="img/botao-check.png">
+                                                <img id="n" src="img/botao-x.png">
+                                            </div>
+                                        </article>
+                                        <article class="comentario col-xs-12">
+                                            <div class="img-comentario col-md-1 nopadding">
+                                                <img src="img/avatar-cpf.png">
+                                            </div>
+                                            <div class="texto-comentario col-md-9">
+                                                <p>OK. Resolvo seu problema. Valor: R$100/hora</p>
+                                            </div>
+                                            <div class="aceitar col-md-2">
+                                                <img id="y" src="img/botao-check.png">
+                                                <img id="n" src="img/botao-x.png">
+                                            </div>
+                                        </article>
+                                        <article class="comentario col-xs-12">
+                                            <div class="img-comentario col-md-1 nopadding">
+                                                <img src="img/avatar-cpf.png">
+                                            </div>
+                                            <div class="texto-comentario col-md-9">
+                                                <p>OK. Resolvo seu problema. Valor: R$100/hora</p>
+                                            </div>
+                                            <div class="aceitar col-md-2">
+                                                <img id="y" src="img/botao-check.png">
+                                                <img id="n" src="img/botao-x.png">
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>  
+                            </article>
+                        </div>
+                    </div>
+                    <div class="conexao col-md-3 col-lg-3">
+                        <span class="x">X</span>
+                        <div class="aba aba-conexao col-md-12">
+                            <div class="conect">
+                                <img src="img/minhas-conexoes.png" alt="Minhas conexões">
+                                <span id="conexoes-desktop">MINHAS CONEXÕES</span>
+                                <span id="conexoes-mobile">CONEXÕES</span>
+                            </div>
+                        </div>
+                        <div class="peoples-conexao">
+                            <div class="people col-xs-12 col-md-12">
+                                <div class="col-xs-2 col-md-2 people-img">
+                                    <img src="img/avatar-cpf.png" alt="Foto da conexão">
+                                </div>
+                                <div class="col-xs-8 col-md-8 people-texto">
+                                    <p class="nome">João Pires</p>
+                                    <p class="funcao">Pedreiro</p>
+                                </div>
+                                <div class="col-xs-2 col-md-2">
+                                    <img src="img/indicar-ativo.png" alt="Recomendar">
+                                </div>
+                            </div>
+                            <div class="people col-xs-12 col-md-12">
+                                <div class="col-xs-2 col-md-2 people-img">
+                                    <img src="img/avatar-cpf.png" alt="Foto da conexão">
+                                </div>
+                                <div class="col-xs-8 col-md-8 people-texto">
+                                    <p class="nome">João Pires</p>
+                                    <p class="funcao">Pedreiro</p>
+                                </div>
+                                <div class="col-xs-2 col-md-2">
+                                    <img src="img/indicar-ativo.png" alt="Recomendar">
+                                </div>
+                            </div>
+                            <div class="people col-xs-12 col-md-12">
+                                <div class="col-xs-2 col-md-2 people-img">
+                                    <img src="img/avatar-cpf.png" alt="Foto da conexão">
+                                </div>
+                                <div class="col-xs-8 col-md-8 people-texto">
+                                    <p class="nome">João Pires</p>
+                                    <p class="funcao">Pedreiro</p>
+                                </div>
+                                <div class="col-xs-2 col-md-2">
+                                    <img src="img/indicar-ativo.png" alt="Recomendar">
+                                </div>
+                            </div>
+                            <div class="people col-xs-12 col-md-12">
+                                <div class="col-xs-2 col-md-2 people-img">
+                                    <img src="img/avatar-cpf.png" alt="Foto da conexão">
+                                </div>
+                                <div class="col-xs-8 col-md-8 people-texto">
+                                    <p class="nome">João Pires</p>
+                                    <p class="funcao">Pedreiro</p>
+                                </div>
+                                <div class="col-xs-2 col-md-2">
+                                    <img src="img/indicar-ativo.png" alt="Recomendar">
+                                </div>
+                            </div>
+                            <div class="people col-xs-12 col-md-12">
+                                <div class="col-xs-2 col-md-2 people-img">
+                                    <img src="img/avatar-cpf.png" alt="Foto da conexão">
+                                </div>
+                                <div class="col-xs-8 col-md-8 people-texto">
+                                    <p class="nome">João Pires</p>
+                                    <p class="funcao">Pedreiro</p>
+                                </div>
+                                <div class="col-xs-2 col-md-2">
+                                    <img src="img/indicar-ativo.png" alt="Recomendar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 col-md-7 footer-esq">
+                    <div class="col-xs-4 col-md-4 logo-footer">
+                        <img src="img/logo-koote.png">
+                    </div>
+                    <div class="col-xs-8 col-md-8 links-footer">
+                        <a href="#" alt="Como funciona">Como funciona</a>
+                        <a href="#" alt="Política de privacidade">Política de privacidade</a>
+                        <a href="#" alt="Termos de uso">Termos de uso</a>
+                        <a href="#" alt="Atendimento">Atendimento</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 footer-dir">
+                    <div class="col-sm-offset-8 col-sm-4 col-md-offset-8 col-md-4 redes-sociais">
+                        <a href="#" alt="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href="#" alt="Twitter"><img src="img/twitter.png" alt="Twitter"></a>
+                        <a href="#" alt="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                    </div>
+                    <div class="col-md-12 direitos">© 2017 koote! Todos os direitos reservados.</div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-ui.js"></script>
+    </body>
+</html>

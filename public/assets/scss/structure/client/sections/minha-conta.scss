@@ -1,0 +1,411 @@
+.minha-conta {
+	background-image: url(../img/background-internas-s.jpg);
+    background-repeat: no-repeat;
+    padding-top: 50px;
+	.formulario{
+	    margin-bottom: 100px;
+	    box-shadow: 0px 0px 50px -15px black;
+	    border-radius: 5px;
+	    padding: 50px;
+	     background-color: $branco;
+	    .cadastrese{
+	    	color: $cinza;
+	    	border-bottom: 1px solid rgba(134, 135, 137, 0.5);
+	    	font-family: $fontfamily;
+	    }
+	    .menu{
+	    	&.menu-mobile{
+	    		display: none;
+	    	}
+	    	height: 700px;
+	    	ul{
+	    		padding-left: 0px;
+	    		li{
+	    			font-family: $fontfamily;
+		    		list-style: none;
+				    background-color: $azulLighter;
+				    border-radius: 30px;
+				    line-height: 65px;
+				    width: 85%;
+				    color: $branco;
+				    text-align: center;
+				    position: relative;
+				    margin-top: 15px;
+				    display: flex;
+				    align-items: center;
+				    justify-content: flex-start;
+				    padding-left: 20px;
+				    font-size: 15px;
+				    letter-spacing: 1px;
+				    cursor: pointer;
+				    transition: 1s;
+				    span {
+					    background-color: $azulHalfLighter;
+					    color: #FFF;
+					    border-radius: 50%;
+					    position: static;
+					    width: 40px;
+					    height: 40px;
+					    display: flex;
+					    align-items: center;
+					    justify-content: center;
+					    margin-right: 18px;
+					    font-size: 20px;
+				    }
+				    &.active{
+				    	background-color: $azulDark;
+				    	span {
+					    	background-color: $azulHalfDark;
+					    }
+				    }
+				    &#menu-3{
+				    	display: none;
+				    }
+	    		}
+	    	}
+	    	.foto{
+	    		margin-top: 40px;
+	    		width: 85%;
+	    		text-align: center;
+	    		display: flex;
+	    		flex-direction: column;
+	    		justify-content: center;
+	    		align-items: center;
+	    		.foto-img{
+	    			border-radius: 50%;
+	    			margin-bottom: 30px;
+	    		}
+	    		.file{
+	    			position: relative;
+	    			#arquivo{
+	    				visibility: hidden;
+	    				text-align: center;
+	    			}
+	    			.btn-holder{
+	    				position: absolute;
+					    top: 0;
+					    text-align: center;
+					    width: 100%;
+					    display: flex;
+					    justify-content: center;
+					    .procura-arq{
+					    	text-decoration: inherit;
+						    font-weight: 500;
+						    color: white;
+						    background: #a5a6a8;
+						    border-radius: 30px;
+						    width: 50%;
+					        display: flex;
+						    justify-content: space-around;
+						    align-items: center;
+						    text-transform: uppercase;
+						    font-size: 12px;
+					    }
+	    			}
+	    		}
+	    	}
+	    }
+	    .form-dados-pessoais{
+	    	margin-top: 15px;
+    		.form-group{
+	    		label{
+		    		font-family: $fontfamily;
+		    		color: $cinza;
+		    		font-size: 17px;
+		    		display: block;
+		    	}
+		    	input{
+		    		font-family: $fontfamily;
+		    		background-color: $cinzaHalfLighter;
+	    		    border: 0px;
+				    height: 50px;
+				    font-size: 18px;
+				    border-radius: 7px;
+		    	}
+		    	select{
+		    		height: 50px;
+				    width: 85%;
+				    border-radius: 2px;
+				    font-size: 18px;
+					padding: 12px;
+					color: $cinza;
+					border-color: $cinzaHalfLighter;
+		    	}
+		    	.nopadding {
+				   padding: 0 !important;
+				   margin: 0 !important;
+				}
+				
+	    	}
+	    	.margintop{
+				margin-top: 15px;
+			}
+			.check{
+				label{
+				    background: transparent;
+			        border: 0px;
+			        display: block;
+				    width: 100%;
+				    text-align: left;	
+				}
+				input{
+					height: 10px;
+					width: 20px;
+				}
+				.label-check{
+					font-size: 15px;
+				}
+				.ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon, .ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon {
+					width: 15px;
+					height: 15px;	
+				}
+			}	
+			.btn{
+			    background-color: #2e71f2;
+			    color: #FFF;
+			    border-radius: 20px;
+			    font-size: 11px;
+			    line-height: 23px;
+			    width: 145px;
+			    letter-spacing: 1px;
+			    margin-top: 22px;
+			    transition: 0.8s;
+			    font-family: $fontfamily;
+			}			   	
+	    }
+	    .form-localizacao-prestador{
+	    	display: none;
+	    	.nopadding{
+				padding: 0px;
+			}
+    		.form-group{
+	    		padding-right: 15px;
+    			label{
+					font-family: $fontfamily;
+					font-size: 16px;
+				    margin-top: 10px;
+				}
+				.bootstrap-tagsinput{
+					width: 100%;
+					height: 200px;
+					background-color: $cinzaHalfLighter;
+		    		border:0px;
+					input {
+					    display: none;
+					}
+					span{
+						&.tag{
+					        margin-right: 2px;
+						    color: gray;
+						    background-color: white;
+						    padding: 15px 12px 15px 25px;
+						    line-height: 45px;
+						    border-radius: 30px;
+						    & [data-role="remove"]{
+					    	    background-color: gray;
+							    color: white;
+							    border-radius: 50%;
+							    padding: 2px 4px;
+							    font-size: 15px;
+							    font-weight: 100;
+						    }
+						}
+					}
+		    	}
+			}
+			.mais{
+			    position: absolute;
+			    right: 0px;
+			    top: -35px;
+			    color: $branco;
+			    background: $azul;
+			    width: 20px;
+			    height: 20px;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    border-radius: 50%;
+			}	
+	    }
+	    .form-localizacao{
+	    	display: none;
+	    	margin-top: 15px;
+	    	.nopadding{
+	    		padding: 0px;
+	    	}
+	    	.titulo-local{
+    		    font-size: 20px;
+			    font-weight: bold;
+			    padding: 10px 0px;
+			    display: block;
+	    	}
+    		.form-group{
+	    		label{
+		    		font-family: $fontfamily;
+		    		color: $cinza;
+		    		font-size: 17px;
+		    		display: block;
+		    	}
+		    	input{
+		    		font-family: $fontfamily;
+		    		background-color: $cinzaHalfLighter;
+	    		    border: 0px;
+				    height: 50px;
+				    font-size: 18px;
+				    border-radius: 7px;
+		    	}
+		    	select{
+		    		height: 50px;
+				    width: 95%;
+				    border-radius: 2px;
+				    font-size: 18px;
+					padding: 12px;
+					color: $cinza;
+					border-color: $cinzaHalfLighter;
+		    	}
+		    	&.nopadding {
+				   padding: 0;
+				   margin: 0;
+				}
+				#estado{
+					width: 87%;
+				}
+				
+	    	}
+	    	.margintop{
+				margin-top: 15px;
+			}
+			.check{
+				label{
+					display: flex;
+				    justify-content: flex-start;
+				    align-items: center;
+				}
+				input{
+					height: 10px;
+					width: 20px;
+				}
+				.label-check{
+					font-size: 15px;
+				}
+			}
+			.mais{
+			    position: absolute;
+			    right: 0px;
+			    top: 40px;
+			    color: white;
+			    background: blue;
+			    width: 20px;
+			    height: 20px;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    border-radius: 50%;
+			}	
+			.btn{
+			    background-color: #2e71f2;
+			    color: #FFF;
+			    border-radius: 20px;
+			    font-size: 11px;
+			    line-height: 23px;
+			    width: 145px;
+			    letter-spacing: 1px;
+			    margin-top: 22px;
+			    transition: 0.8s;
+			    font-family: $fontfamily;
+			    &#proxima-etapa-prestador{
+			    	display: none;
+			    }
+	    	}    	
+	    }
+	    .form-prestador{
+	    	display: none;
+	    	.nopadding{
+				padding: 0px;
+			}
+    		.form-group{
+	    		padding-right: 15px;
+    			label{
+					font-family: $fontfamily;
+					font-size: 16px;
+				    margin-top: 10px;
+				}
+				textarea{
+					width: 100%;
+					border: 1px solid $cinzaHalfLighter;
+					height: 150px;
+					border-radius: 7px;
+					background-color: $branco;
+				} 
+				input{
+					display: block;
+					width: 50%;
+					border: 1px solid $cinzaHalfLighter;
+					border-radius: 7px;
+					background-color: $branco;
+					line-height: 45px;
+				}
+				.txto-input-tag{
+					display: block;
+				    color: $azulHalfDark;
+				    font-size: 12px;
+				    margin-top: 10px;
+				    font-family: $fontfamily;
+				    font-weight: bold;
+				}
+				.bootstrap-tagsinput{
+					width: 100%;
+					height: 200px;
+					background-color: $cinzaHalfLighter;
+		    		border:0px;
+					input {
+					    display: none;
+					}
+					span{
+						&.tag{
+					        margin-right: 2px;
+						    color: gray;
+						    background-color: white;
+						    padding: 15px 12px 15px 25px;
+						    line-height: 45px;
+						    border-radius: 30px;
+						    & [data-role="remove"]{
+					    	    background-color: gray;
+							    color: white;
+							    border-radius: 50%;
+							    padding: 2px 4px;
+							    font-size: 15px;
+							    font-weight: 100;
+						    }
+						}
+					}
+		    	}
+			}
+			.mais-tag{
+			    position: absolute;
+			    right: 45%;
+			    top: 50px;
+			    color: $branco;
+			    background: $azul;
+			    width: 20px;
+			    height: 20px;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    border-radius: 50%;
+			}	
+			.btn{
+			    background-color: #2e71f2;
+			    color: #FFF;
+			    border-radius: 20px;
+			    font-size: 11px;
+			    line-height: 23px;
+			    width: 145px;
+			    letter-spacing: 1px;
+			    margin-top: 22px;
+			    transition: 0.8s;
+			    font-family: $fontfamily;
+	    	}    	
+	    }
+	}
+}

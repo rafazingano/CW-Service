@@ -1,0 +1,79 @@
+header{
+	font-family: $fontfamily;
+	background-color: $branco;
+	height: 120px;
+	.bemvindo{
+		height: 120px;
+	    display: flex;
+	    justify-content: flex-end;
+	    align-items: center;
+	    span{
+			color: $cinza;
+			font-size: 16px;
+    		margin-right: 20px;
+		}
+		.btn {
+			background-color: $azul;
+			color: $branco;
+			border-radius: 20px;
+		    font-size: 11px;
+		    line-height: 23px;
+		    width: 100px;
+		    letter-spacing: 1px;
+		    margin-top: 0px;
+		    transition: 0.8s;
+		    font-family: $fontfamily;
+		}
+	}
+	.logo{
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		height: 120px;
+		img{
+			width: auto;
+		}
+	}
+	form{
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		height: 120px;
+		padding: 25px 0px;
+		.form-group{
+			margin: 3px;
+			label{
+				color: $cinzaLighter;
+			    font-size: 13px;
+			    font-family: Roboto;
+			    font-weight: 400;
+			    display: block;
+			}
+			input {
+				line-height: 30px;
+			    background-color: $cinzaHalfLighter;
+			    border: 0px;
+			    border-radius: 5px;
+			    width: 160px;
+			}
+			.esqueceu-senha {
+			    color: #427ff3;
+			    text-decoration: underline;
+			    font-family: Roboto;
+			    font-size: 11px;
+			    display: block;
+			}
+		}
+		.btn {
+			background-color: $azul;
+			color: $branco;
+			border-radius: 20px;
+		    font-size: 11px;
+		    line-height: 23px;
+		    width: 100px;
+		    letter-spacing: 1px;
+		    margin-top: 22px;
+		    transition: 0.8s;
+		}
+	}
+}

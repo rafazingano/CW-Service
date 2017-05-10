@@ -1,0 +1,618 @@
+@media (max-width: 1200px){
+	.perfil {
+		.infos-perfil{
+		    .topo-perfil{
+		    	.img-perfil{
+		    		img{}
+		    	}
+		    	.nome-perfil{
+		    		.estrelas-cidade{
+		    			.estrelas{
+				    		.star{
+							    &.active{}
+							    &:hover{}
+					    	}
+				    	}
+		    		}
+		    	}
+		    	.conf{
+		    		#config-img{
+		    			&:hover {}
+		    		}
+		    	}
+		    	.hr-topo-perfil{}
+		    	h4{}
+		    }
+		}
+		.conteudo{
+			.aba-old{}
+			.aba{	
+				font-size: 14px;
+			    img{}
+			    &.active{
+			    	&::after {}
+			    }
+			}
+			.relacionados{
+				.nopadding{}
+				.koote{
+					.topo{
+						.abre{}
+						.fecha{}
+						.infos-koote{}
+						.remover{}
+					}
+					.descricao{
+						.desc{
+						    .tag {}
+							.anexo {}
+							p{}
+						}
+						.comentarios{
+							.comentario{
+						        .img-comentario{}
+							    .resposta-prestador{
+							    	.proposta{}
+							    	.btn{}	
+							    }
+							    p{}
+							    .aceitar{}
+							    .nopadding{}
+							}
+						}
+					}
+					&.removido{}
+				}
+			}
+			.aprovados-pendentes{
+				.nopadding{}
+				.koote{
+					.topo{
+						.abre{}
+						.fecha{}
+						.infos-koote{}
+						.remover{}
+					}
+					.descricao{
+						.desc{
+						    .tag {}
+							.anexo {}
+							p{}
+						}
+						.comentarios{
+							.comentario{
+						        .img-comentario{}
+							    .resposta-prestador{
+							    	.proposta{}
+							    }
+							    p{}
+							    .aceitar{}
+							    .nopadding{}
+							}
+						}
+					}
+					&.removido{}
+				}
+			}
+		}
+		.conexao{
+			.x{}
+			.aba{
+	    		#conexoes-mobile{}
+	    		#conexoes-desktop{}
+			    img{}
+			    &::after {}
+				.conect{}
+			}
+			.peoples-conexao{
+					.people{
+						.people-img{
+							img{}
+						}
+						.col-md-8.people-texto {
+						    .nome{}
+							.funcao{}
+						}
+					}
+				}
+		}
+	}
+}
+@media (max-width: 992px){
+	.perfil {
+		.infos-perfil{
+		    .topo-perfil{
+		    	.img-perfil{
+		    		text-align: center;
+		    		img{}
+		    	}
+		    	.nome-perfil{
+		    		text-align: center;
+		    		.estrelas-cidade{
+		    			display: flex;
+		    			justify-content: center;
+		    			align-items: center;
+		    			.estrelas{
+				    		.star{
+							    &.active{}
+							    &:hover{}
+					    	}
+				    	}
+		    		}
+		    	}
+		    	.conf{
+		    		#config-img{
+		    			&:hover {}
+		    		}
+		    	}
+		    	.hr-topo-perfil{}
+		    	h4{}
+		    }
+		}
+		.conteudo{
+			.aba-old{}
+			.aba{	
+				font-size: 14px;
+			    img{}
+			    &.active{
+			    	&::after {}
+			    }
+			}
+			.relacionados{
+				.nopadding{}
+				.koote{
+					.topo{
+						.abre{}
+						.fecha{}
+						.infos-koote{}
+						.remover{}
+					}
+					.descricao{
+						.desc{
+						    .tag {
+						    	&:hover{
+						        	.tags-balao{
+						        		display: none;
+									}
+						        }
+						    	.tags-balao{
+					    			right: -50px;
+				    			    top: 70px;
+					    			&::after{
+					    				left: 171px;
+					    				top: -7px;
+					    			}
+					    		}
+						    }
+							.anexo {}
+							p{}
+						}
+						.comentarios{
+							.comentario{
+						        .img-comentario{}
+							    .resposta-prestador{
+							    	.proposta{}
+							    	.btn{}	
+							    }
+							    p{}
+							    .aceitar{}
+							    .nopadding{}
+							}
+						}
+					}
+					&.removido{}
+				}
+			}
+			.aprovados-pendentes{
+				.nopadding{}
+				.koote{
+					.topo{
+						.abre{}
+						.fecha{}
+						.infos-koote{}
+						.remover{}
+					}
+					.descricao{
+						.desc{
+						    .tag {
+						    	&:hover{
+						        	.tags-balao{
+						        		display: none;
+									}
+						        }
+						    	.tags-balao{
+					    			right: -50px;
+				    			    top: 70px;
+					    			&::after{
+					    				left: 171px;
+					    				top: -7px;
+					    			}
+					    		}
+						    }
+							.anexo {}
+							p{}
+						}
+						.comentarios{
+							.comentario{
+						        .img-comentario{}
+							    .resposta-prestador{
+							    	.proposta{}
+							    }
+							    p{}
+							    .aceitar{}
+							    .nopadding{}
+							}
+						}
+					}
+					&.removido{}
+				}
+			}
+		}
+		.conexao{
+		    position: fixed;
+		    background-color: white;
+		    width: 300px;
+		    top: 0px;
+		    left: -310px;
+		    z-index: 999;
+		    padding: 30px 30px;
+		    height: 100%;
+		    box-shadow: 0px 0px 20px #ffcd00;
+		    transition: 1s;
+		    &.active{
+    			left: 0;
+    		}
+			.x{
+				display: block;
+			    position: absolute;
+			    top: 10px;
+			    right: 10px;
+			    font-size: 20px;
+			    font-weight: bold;
+			    color: #ffcd00;
+			}
+			.aba-mobile{
+			    background-color: #ffcd00;
+			    width: 150px;
+			    height: 50px;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    border-radius: 0px 0px 20px 20px;
+			    color: $cinzaBalaoActive;
+			    font-weight: bold;
+			    transform: rotate(-90deg);
+			    position: absolute;
+			    left: 250px;
+			    padding-top: 5px;
+			    top: 150px;
+			}
+			.aba{
+	    		#conexoes-mobile{}
+	    		#conexoes-desktop{}
+			    img{}
+			    &::after {}
+			    &.aba-conexao{
+					right: -140px;
+			    }
+				.conect{}
+			}
+			.peoples-conexao{
+					.people{
+						.people-img{
+							img{}
+						}
+						.col-md-8.people-texto {
+						    .nome{}
+							.funcao{}
+						}
+					}
+				}
+		}
+		.perfil-publico{
+			&.conexao{
+				margin-top: 0px;
+			}
+		}
+	}
+}
+@media (max-width: 768px){
+	.perfil {
+		.infos-perfil{
+		    padding: 50px 10px;
+		    .topo-perfil{
+		    	.img-perfil{
+		    		img{}
+		    	}
+		    	.nome-perfil{
+		    		.estrelas-cidade{
+		    			.estrelas{
+				    		.star{
+							    &.active{}
+							    &:hover{}
+					    	}
+				    	}
+		    		}
+		    	}
+		    	.conf{
+		    		#config-img{
+		    			&:hover {}
+		    		}
+		    	}
+		    	.hr-topo-perfil{}
+		    	h4{}
+		    }
+		}
+		.conteudo{
+			.aba-old{}
+			.aba{	
+				font-size: 9px;
+				padding: 0px 10px;
+			    img{}
+			    &.active{
+			    	&::after {}
+			    }
+			}
+			.relacionados{
+				.nopadding{}
+				.koote{
+					.topo{
+						.abre{}
+						.fecha{}
+						.local{
+					        padding-left: 15px;
+
+						}
+						.infos-koote{
+							display: flex;
+						    justify-content: center;
+						    align-items: center;
+						}
+						.remover{
+						    margin-left: -10px;
+						}
+					}
+					.descricao{
+						.desc{
+						    .tag {
+						    	&:hover{
+						        	.tags-balao{
+						        		display: none;
+									}
+						        }
+						    	.tags-balao{
+					    			right: -50px;
+					    			&::after{
+					    				left: 171px;
+					    			}
+					    		}
+						    }
+							.anexo {}
+							p{}
+						}
+						.comentarios{
+							.comentario{
+						        .img-comentario{}
+							    .resposta-prestador{
+							    	.proposta{}
+							    	.btn{}	
+							    }
+							    p{}
+							    .aceitar{}
+							    .nopadding{}
+							}
+						}
+					}
+					&.removido{}
+				}
+			}
+			.aprovados-pendentes{
+				.nopadding{}
+				.koote{
+					.topo{
+						.abre{}
+						.fecha{}
+						.infos-koote{}
+						.remover{}
+					}
+					.descricao{
+						.desc{
+						    .tag{
+						    	&:hover{
+						        	.tags-balao{
+						        		display: none;
+									}
+						        }
+						    	.tags-balao{
+					    			right: -50px;
+					    			&::after{
+					    				left: 171px;
+					    			}
+					    		}
+						    }
+							.anexo{}
+							p{}
+						}
+						.comentarios{
+							.comentario{
+						        .img-comentario{}
+							    .resposta-prestador{
+							    	.proposta{}
+							    }
+							    p{}
+							    .aceitar{}
+							    .nopadding{}
+							}
+						}
+					}
+					&.removido{}
+				}
+			}
+		}
+		.conexao{
+			.x{}
+			.aba{
+	    		#conexoes-mobile{}
+	    		#conexoes-desktop{}
+			    img{}
+			    &::after{}
+			    &.aba-conexao{
+			    }
+				.conect{}
+			}
+			.peoples-conexao{
+					.people{
+						.people-img{
+							img{}
+						}
+						.col-md-8.people-texto {
+						    .nome{}
+							.funcao{}
+						}
+					}
+				}
+		}
+	}
+}	
+@media (max-width: 420px){
+	.perfil {
+		.infos-perfil{
+		    .topo-perfil{
+		    	.img-perfil{
+		    		text-align: center;
+		    		img{}
+		    	}
+		    	.nome-perfil{
+		    		text-align: center;
+		    		.nome{
+		    			font-size: 26px;
+		    		}
+		    		.estrelas-cidade{
+		    			display: flex;
+		    			justify-content: center;
+		    			align-items: center;
+		    			.estrelas{
+				    		.star{
+							    &.active{}
+							    &:hover{}
+					    	}
+				    	}
+		    		}
+		    	}
+		    	.conf{
+		    		#config-img{
+		    			&:hover {}
+		    		}
+		    	}
+		    	.hr-topo-perfil{}
+		    	h4{}
+		    }
+		}
+		.conteudo{
+			.aba-old{}
+			.aba{
+				text-align: center;
+				flex-direction: column;	
+				font-size: 10px;
+				padding: 0px 1px;
+			    height: 80px;
+			    img{}
+			    &.active{
+			    	&::after {
+			    		top: 70px;
+			    	}
+			    }
+			}
+			.relacionados{
+				.nopadding{}
+				.koote{
+					.topo{
+						.abre{}
+						.fecha{}
+						.remover{}
+					}
+					.descricao{
+						.desc{
+						    font-size: 16px;
+						    .tag {}
+							.anexo {}
+							p{}
+						}
+						.comentarios{
+							.comentario{
+						        .img-comentario{}
+							    .resposta-prestador{
+							    	.proposta{
+							    		font-size: 15px;
+							    	}
+							    	.btn{}	
+							    }
+							    p{}
+							    .aceitar{}
+							    .nopadding{}
+							}
+						}
+					}
+					&.removido{}
+				}
+			}
+			.aprovados-pendentes{
+				.nopadding{}
+				.koote{
+					.topo{
+						.abre{}
+						.fecha{}
+						.infos-koote{
+							font-size: 12px;
+						}
+						.remover{}
+					}
+					.descricao{
+						.desc{
+						    .tag {}
+							.anexo {}
+							p{}
+						}
+						.comentarios{
+							.comentario{
+						        .img-comentario{}
+							    .resposta-prestador{
+							    	.proposta{
+						    		    font-size: 12px;
+							    	}
+							    }
+							    p{}
+							    .aceitar{}
+							    .nopadding{}
+							}
+						}
+					}
+					&.removido{}
+				}
+			}
+		}
+		.conexao{
+			.x{}
+			.aba{
+	    		#conexoes-mobile{}
+	    		#conexoes-desktop{}
+			    img{}
+			    &::after {}
+			    &.aba-conexao{
+			    }
+				.conect{}
+			}
+			.peoples-conexao{
+					.people{
+						.people-img{
+							img{}
+						}
+						.col-md-8.people-texto {
+						    .nome{}
+							.funcao{}
+						}
+					}
+				}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+<?php
+
+namespace App\Libraries;
+
+use Illuminate\Support\ServiceProvider;
+
+class ValidatorProvider extends ServiceProvider
+{
+    /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = false;
+    
+    /**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
+     
+    public function boot()
+    {
+        $me = $this;
+        $this->app['validator']->resolver(function ($translator, $data, $rules, $messages) use($me)
+        {
+            $messages += $me->getMessages();
+            
+            return new Validator($translator, $data, $rules, $messages);
+        });
+    }
+    protected function getMessages()
+    {
+        return [        
+            'celular'          => 'O campo :attribute não é um celular válido',
+            'celular_com_ddd'  => 'O campo :attribute não é um possui o formato válido de celular com DDD',
+            'cnh'              => 'O campo :attribute não é uma carteira nacional de habilitação válida',
+            'cnpj'             => 'O campo :attribute não é um CNPJ válido',
+            'cpf'              => 'O campo :attribute não é um CPF válido',
+            'data'             => 'O campo :attribute não é uma data com formato válido',
+            'formato_cnpj'     => 'O campo :attribute não possui o formato válido de CNPJ',
+            'formato_cpf'      => 'O campo :attribute não possui o formato válido de CPF',
+            'telefone'         => 'O campo :attribute não é um telefone válido',
+            'telefone_com_ddd' => 'O campo :attribute não é um possui o formato válido de telefone com DDD'
+        ];
+    }
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register(){}
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return array();
+    }
+}
